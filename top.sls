@@ -1,3 +1,7 @@
 base:
   '*':
-    - helloworld
+    - apache
+    - ssh
+    - php
+    - terminal
+    - skel
