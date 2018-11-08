@@ -5,3 +5,4 @@ base:
     - php
     - terminal
     - skel
+    - saltminion
