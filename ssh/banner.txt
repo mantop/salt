@@ -1,0 +1,1 @@
+All connections will be logged. Do not attempt to log in without permission from administrator. Illegal activities (such as logging in without this permission or trying disrupt the server by any means) will be reported to authorities.

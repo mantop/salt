@@ -10,3 +10,7 @@ sshd.service:
    - name: sshd
    - watch:
      - file: /etc/ssh/sshd_config
+
+/tmp/banner.txt:
+ file.managed:
+   - source: salt://ssh/banner.txt

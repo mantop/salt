@@ -1,12 +1,9 @@
 salt-minion:
  pkg.latest
 
-salt-master:
- pkg.latest
-
-/etc/salt/minion:
- file.managed:
-   - source: salt://saltminion/minion_config
+#/etc/salt/minion:
+# file.managed:
+#   - source: salt://saltminion/minion_config
 
 salt-minion.service:
  service.running:
