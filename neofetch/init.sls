@@ -1,0 +1,2 @@
+neofetch:
+ pkg.installed
