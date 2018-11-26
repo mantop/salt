@@ -18,3 +18,4 @@ base:
 
   'win*':
     - windows
+    - cpuz
