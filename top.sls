@@ -2,6 +2,7 @@ base:
 #  '*':
 
   'linux*':
+    - ufw
     - apache
     - ssh
     - php
@@ -10,10 +11,10 @@ base:
     - neofetch
   
   'master':
+    - ufw
     - apache
     - ssh
     - php
-    - terminal
     - skel
 
   'win*':
