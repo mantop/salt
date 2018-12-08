@@ -1,0 +1,8 @@
+This computer is managed with Salt. Topi Manninen.
+
+
+Installed programs will be writed here (reopening this file is needed to see refreshed results)
+
+***********************************************************************************************
+
+Installed programs:

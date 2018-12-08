@@ -19,4 +19,5 @@ base:
 
   'win*':
     - windows
-    - cpuz
+    - windows-software
+    - OOSU10

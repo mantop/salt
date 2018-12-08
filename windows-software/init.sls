@@ -1,7 +1,15 @@
+C:\Users\TobyC\Desktop\managed.txt:
+ file.managed:
+   - source: salt://windows-software/managed.txt
+
 cpuz-installing:
  file.append:
    - name: C:\Users\TobyC\Desktop\managed.txt 
    - text: "- Installing CPUZ..."
+
+Timestamp1:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
 
 cpuz:
   chocolatey.installed:
@@ -14,12 +22,16 @@ cpuz-installed:
 
 C:\Program Files\CPUID\CPU-Z\cpuz.ini:
  file.managed:
-   - source: salt://cpuz/cpuz.ini
+   - source: salt://windows-software/cpuz.ini
 
 teamspeak-installing:
  file.append:
    - name: C:\Users\TobyC\Desktop\managed.txt 
    - text: "- Installing Teamspeak..."
+
+Timestamp2:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
 
 Teamspeak:
   chocolatey.installed:
@@ -30,24 +42,14 @@ teamspeak-installed:
    - name: C:\Users\TobyC\Desktop\managed.txt 
    - text: "- Installed Teamspeak"
 
-discord-installing:
- file.append:
-   - name: C:\Users\TobyC\Desktop\managed.txt 
-   - text: "- Installing Discord..."
-
-#Discord:
-#  chocolatey.installed:
-#    - name: discord.install
-
-discord-installed:
- file.append:
-   - name: C:\Users\TobyC\Desktop\managed.txt 
-   - text: "- Installed Discord"
-
 skype-installing:
  file.append:
    - name: C:\Users\TobyC\Desktop\managed.txt
    - text: "- Installing Skype..."
+
+Timestamp3:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
 
 Skype:
   chocolatey.installed:
@@ -58,26 +60,14 @@ skype-installed:
    - name: C:\Users\TobyC\Desktop\managed.txt
    - text: "- Installed Skype"
 
-shutup10-installing:
- file.append:
-   - name: C:\Users\TobyC\Desktop\managed.txt
-   - text: "- Installing Shutup10..."
-
-Shutup10:
-  chocolatey.installed:
-    - name: shutup10
-
-#TODO: Place portable version with configuration file instead of this
-#
-#shutup10-installed:
-# file.append:
-#   - name: C:\Users\TobyC\Desktop\managed.txt
-#   - text: "- Installed Shutup10"
-
 osu-installing:
  file.append:
    - name: C:\Users\TobyC\Desktop\managed.txt
    - text: "- Installing Osu!..."
+
+Timestamp4:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
 
 Osu!:
   chocolatey.installed:
@@ -88,4 +78,32 @@ osu-installed:
    - name: C:\Users\TobyC\Desktop\managed.txt
    - text: "- Installed Osu!"
 
-#TODO: Extract favorite OSU Maps from ZIP to correct directory
+end-of-programs:
+ file.append:
+   - name: C:\Users\TobyC\Desktop\managed.txt
+   - text: "***** End of program installations *****"
+
+
+Extracting:
+ file.append:
+   - name: C:\Users\TobyC\Desktop\managed.txt
+   - text: "Extracting Osu! Beatmaps..."
+
+Timestamp5:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
+
+extract-songs:
+  archive.extracted:
+    - name: C:\Program Files (x86)\osu!\songs\
+    - source: salt://windows-software/Songs.zip
+    - enforce_toplevel: False
+
+Timestamp6:
+  cmd.run:
+    - name: time /T >> C:\Users\TobyC\Desktop\managed.txt
+
+Extraction-complete:
+ file.append:
+   - name: C:\Users\TobyC\Desktop\managed.txt
+   - text: "***** Done! *****"
