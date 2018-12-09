@@ -1,0 +1,13 @@
+This computer is managed with Salt. Topi Manninen.
+
+Managed programs:
+
+- Notepad ++
+- Firefox
+- Steam
+- VLC
+- Winscp
+- Python3_x64
+- Chrome
+- Chocolatey
+- Cygwin

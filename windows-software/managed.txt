@@ -5,4 +5,4 @@ Installed programs will be writed here (reopening this file is needed to see ref
 
 ***********************************************************************************************
 
-Installed programs:
+Log:

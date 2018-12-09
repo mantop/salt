@@ -11,13 +11,15 @@ base:
     - neofetch
   
   'master':
-    - ufw
+    - ufw-master
     - apache
     - ssh
     - php
     - skel
 
-  'win*':
-    - windows
+  'windows10*':
     - windows-software
     - OOSU10
+  
+  'windows7*':
+    - windows
