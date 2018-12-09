@@ -53,3 +53,9 @@ Installation time from clean win7-virtual
 Second time running state.highstate
 
 ![](images/virtual02-02.png)
+
+How log-file looks in managed Windows-10 computer:
+
+![](images/logfile.png)
+
+Easier to spot from managed computer if something gets stuck / program has been updated recently from timestamps
