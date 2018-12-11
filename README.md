@@ -59,3 +59,7 @@ How log-file looks in managed Windows-10 computer:
 ![](images/logfile.png)
 
 Easier to spot from managed computer if something gets stuck / program has been updated recently from timestamps
+
+![](images/windows10.png)
+
+Windows10 state run in fresh virtualpc
